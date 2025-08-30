@@ -2,7 +2,7 @@
 
 
 --- DDL Scripts For source_crm.
- CREATE TABLE OR REPLACE TABLE bronze.crm_cust_info(
+ CREATE OR REPLACE TABLE bronze.crm_cust_info(
 	cst_id INT,
 	cst_key VARCHAR(30),
 	cst_firstname VARCHAR(30),
@@ -24,7 +24,7 @@
  );
 
 
- CREATE TABLE OR REPLACE TABLE bronze.crm_sales_details(
+ CREATE OR REPLACE TABLE bronze.crm_sales_details(
   	sls_ord_num VARCHAR(10),
 	sls_prd_key VARCHAR(30),
 	sls_cust_id INT,
@@ -42,20 +42,20 @@
 
  -- DDL Scripts For source_erp.
 
- CREATE TABLE OR REPLACE TABLE bronze.erp_cust_az12(
+ CREATE OR REPLACE TABLE bronze.erp_cust_az12(
 	cid VARCHAR(20),
 	bdate DATE,
 	gen VARCHAR(10)
  );
 
 
-CREATE TABLE OR REPLACE TABLE bronze.erp_loc_a101(
+CREATE OR REPLACE TABLE bronze.erp_loc_a101(
 	cid VARCHAR(20),
 	cntry VARCHAR(20)
  );
 
 
- CREATE TABLE OR REPLACE TABLE bronze.erp_px_cat_g1v2(
+ CREATE OR REPLACE TABLE bronze.erp_px_cat_g1v2(
 	id VARCHAR(10),
 	cat VARCHAR(20),
 	subcat VARCHAR(20),
