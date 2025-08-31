@@ -46,4 +46,5 @@ This project demonstrates how to build a **layered data warehouse** in **Snowfla
 ### 6. Execute the Pipeline
 - Call procedure:
   ```sql
-  CALL bronze_data_load('log_table');
+  CALL bronze.bronze_data_load('log_table');
+  CALL silver.silver_data_load('log_table');
